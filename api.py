@@ -36,8 +36,10 @@ def get_game(title):
 def not_found(error):
     return make_response(jsonify({'error': 'Not found'}), 404)
 
-@app.route('library/api/v0.1/games', methods=['POST'])
-def add_game()
+@app.route('/library/api/v0.1/games', methods=['POST'])
+def add_game():
+    #ToDo
+    return
 
 if __name__ == '__main__':
     app.run(debug=True)
